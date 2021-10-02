@@ -1,11 +1,13 @@
 <style>
     :global(*) {
         margin: 0;
+        box-sizing: border-box;
     }
 
     model-viewer {
-        height: 100vh;
-        width: 100vw;
+        /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
+        height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+        width: calc(100vw - env(safe-area-inset-left) - env(safe-area-inset-right));
     }
 </style>
 
