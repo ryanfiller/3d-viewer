@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<style>
+    :global(*) {
+        margin: 0;
+    }
+
+    model-viewer {
+        height: 100vh;
+        width: 100vw;
+    }
+</style>
+
+<model-viewer alt='' src='https://modelviewer.dev/shared-assets/models/Astronaut.glb'ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></model-viewer>
